@@ -28,7 +28,7 @@ export default function Sidebar({ isOpen, onClose }) {
 
   const handelSeachQuery = () => {
     if (searchText.length > 1) {
-      navigate(`products/1?search=${searchText}`);
+      navigate(`products/?search=${searchText}`);
       setSearchText("");
       onClose();
     }
