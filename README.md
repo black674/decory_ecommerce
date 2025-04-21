@@ -67,7 +67,7 @@ Here’s a quick look at **Decory**:
 ### 1. Clone the project
 
 ```bash
-git clone https://github.com/black674/decory.git
+git clone https://github.com/black674/decory_ecommerce.git
 ```
 
 ### 2. Install dependencies
