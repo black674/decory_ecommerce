@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carts",
+  "info": {
+    "singularName": "cart",
+    "pluralName": "carts",
+    "displayName": "Cart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "cartItems": {
+      "type": "json"
+    },
+    "totalQuantity": {
+      "type": "decimal"
+    },
+    "totalAmount": {
+      "type": "decimal"
+    }
+  }
+}

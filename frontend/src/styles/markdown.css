@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/* Markdown styling that preserves formatting while using project color variables */
+.markdown {
+  /* Base text styling */
+  @apply text-base leading-7 text-[var(--color-natural-900)];
+
+  /* Headings */
+  & h1 {
+    @apply text-3xl font-bold mb-4 mt-6 text-[var(--color-primary)];
+  }
+
+  & h2 {
+    @apply text-2xl font-bold mb-3 mt-5 text-[var(--color-primary)];
+  }
+
+  & h3 {
+    @apply text-xl font-bold mb-3 mt-4 text-[var(--color-natural-800)];
+  }
+
+  & h4 {
+    @apply text-lg font-bold mb-2 mt-4 text-[var(--color-natural-800)];
+  }
+
+  & h5,
+  & h6 {
+    @apply text-base font-bold mb-2 mt-3 text-[var(--color-natural-700)];
+  }
+
+  /* Paragraphs and spacing */
+  & p {
+    @apply mb-4;
+  }
+
+  /* Lists */
+  & ul,
+  & ol {
+    @apply mb-4 pl-5;
+  }
+
+  & ul {
+    @apply list-disc;
+  }
+
+  & ol {
+    @apply list-decimal;
+  }
+
+  & li {
+    @apply mb-1;
+  }
+
+  /* Blockquotes */
+  & blockquote {
+    @apply pl-4 border-l-4 border-[var(--color-natural-300)] italic my-4 text-[var(--color-natural-600)];
+  }
+
+  /* Code blocks */
+  & pre {
+    @apply bg-[var(--color-natural-200)] p-4 rounded-md overflow-x-auto mb-4;
+  }
+
+  & code {
+    @apply font-mono bg-[var(--color-natural-200)] px-1.5 py-0.5 rounded text-sm;
+  }
+
+  /* Horizontal rule */
+  & hr {
+    @apply my-6 border-t border-[var(--color-natural-300)];
+  }
+
+  /* Links */
+  & a {
+    @apply text-[var(--color-secondary-blue)] hover:underline;
+  }
+
+  /* Tables */
+  & table {
+    @apply w-full border-collapse mb-4;
+  }
+
+  & th {
+    @apply bg-[var(--color-natural-200)] border border-[var(--color-natural-300)] px-4 py-2 text-left font-bold;
+  }
+
+  & td {
+    @apply border border-[var(--color-natural-300)] px-4 py-2;
+  }
+
+  /* Images */
+  & img {
+    @apply max-w-full h-auto rounded-md my-4;
+  }
+}

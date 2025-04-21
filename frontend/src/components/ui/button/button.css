@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.solid_primary {
+    @apply py-2.5 px-6 bg-black hover:bg-black/90 text-white leading-7 rounded-md cursor-pointer;
+}
+
+.outline_primary {
+    @apply py-2.5 px-6 bg-white text-black border border-black leading-7 rounded-md cursor-pointer;
+}

@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.link {
+    @apply flex items-center gap-1 border-b w-fit cursor-pointer text-sm leading-6 lg:text-base lg:leading-7;
+}
