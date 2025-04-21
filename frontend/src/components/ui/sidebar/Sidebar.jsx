@@ -131,7 +131,7 @@ export default function Sidebar({ isOpen, onClose }) {
         </div>
 
         {!user && (
-          <Button onClick={() => navigate("/signin")} className="!py-2">
+          <Button onClick={() => navigate("/login")} className="!py-2">
             Sign In
           </Button>
         )}
