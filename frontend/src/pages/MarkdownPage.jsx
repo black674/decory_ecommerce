@@ -1,7 +1,7 @@
 import "@/styles/markdown.css";
 
 import Section from "@/components/ui/section/Section";
-import axios from "axios";
+import axios from "@/utils/axios";
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { useNavigate, useParams } from "react-router-dom";
@@ -17,7 +17,7 @@ export default function MarkdownPage() {
     const handelMarkdownContent = async () => {
       setLoading(true);
       try {
-        const { data } = await axios.get(`http://localhost:1337/api/${slug}`);
+        const { data } = await axios.get(`/${slug}`);
         setContent(data.data[0].merkdown);
       } catch (error) {
         console.error("Error fetching markdown content:", error);
