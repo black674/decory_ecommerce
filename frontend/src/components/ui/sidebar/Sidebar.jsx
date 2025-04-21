@@ -130,7 +130,11 @@ export default function Sidebar({ isOpen, onClose }) {
           )}
         </div>
 
-        <Button className="!py-2">Sign In</Button>
+        {!user && (
+          <Button onClick={() => navigate("/signin")} className="!py-2">
+            Sign In
+          </Button>
+        )}
 
         <div className="p-4 flex justify-center gap-6">
           <a href="https://instagram.com">
